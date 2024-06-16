@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Young Serif";
+  color: hsl(24, 5%, 18%);
+}
+
+h2 {
+  font-family: "Young Serif";
+  color: rgba(133, 70, 50, 1);
+}
+h3 {
+  color: hsl(332, 51%, 32%);
+}
+
+ul,
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+p {
+  font-family: "outfit";
+  color: hsl(30, 10%, 34%);
+}
+
+span {
+  font-weight: bold;
+}
+
+img {
+  border-radius: 12px;
+}
+
+td {
+  border-bottom: 1px solid rgba(227, 221, 215, 1);
+  padding-bottom: 8px;
+}
+
+.content-box {
+  width: 100vw;
+  height: hug;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: hsl(30, 54%, 90%);
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.omlette-recipe-container {
+  width: 736px;
+  height: fit-content;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  list-style-position: inside;
+  border-radius: 24px;
+}
+
+.omlette-recipe-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.omlette-recipe-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.omlette-recipe-prepTime {
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  gap: 16px;
+  background-color: hsl(330, 100%, 98%);
+  color: hsl(30, 10%, 34%);
+  font-family: "outfit";
+}
+
+.omlette-recipe-ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: hsl(30, 10%, 34%);
+  font-family: "outfit";
+}
+
+.omlette-recipe-instruction {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: hsl(30, 10%, 34%);
+  font-family: "outfit";
+}
+
+.omlette-recipe-nutrition {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: hsl(30, 10%, 34%);
+  font-family: "outfit";
+}
+
+.count {
+  color: rgba(133, 70, 50, 1);
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 375px) {
+  .content-box {
+    background-color: white;
+    padding: 0px;
+  }
+
+  .omlette-recipe-container {
+    width: 375px;
+    height: 100vh;
+    border-radius: 0px;
+    padding: 0px;
+  }
+  img {
+    border-radius: 0px;
+    height: 171px;
+  }
+
+  .omlette-recipe-content {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 40px;
+  }
+}
